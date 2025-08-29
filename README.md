@@ -1,32 +1,34 @@
-# Person Manager (Node + Express + MongoDB)
 
-A simple RESTful web service with EJS views for managing Person records.
+---
 
-## Features
-- GET /person - list all people (renders a table)
-- GET /person/new - form to create a person
-- POST /person - create a person
-- GET /person/:id/edit - form to edit a person
-- PUT /person/:id - update a person
-- GET /person/:id/delete - confirmation page for deletion
-- DELETE /person/:id - delete a person
+### 📄 README for Node/Mongo Task (Backend)
 
-## Fields
-- name, age, gender, mobile
+```markdown
+# Node.js + MongoDB People API
 
-## Quick start
+This is a simple RESTful API built with Node.js and MongoDB to manage people records.  
+It supports basic CRUD operations.
 
-1. Copy `.env.example` to `.env` and set `MONGO_URI` if needed.
-2. Install dependencies:
+### API Endpoints
+- **GET /person** → Get a list of people
+- **POST /person** → Create a new person
+- **PUT /person/:id** → Update a person by ID
+- **DELETE /person/:id** → Delete a person by ID
+
+### Person Fields
+- Name  
+- Age  
+- Gender  
+- Mobile number  
+
+### Tech Stack
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+
+### How to Run
+1. Clone the repository
+2. Install dependencies  
    ```bash
    npm install
-   ```
-3. Start MongoDB locally (or use a cloud URI), then:
-   ```bash
-   npm start
-   ```
-4. Open http://localhost:3000 in your browser.
-
-## Notes
-- Uses Mongoose for MongoDB interactions.
-- Uses method-override to support PUT/DELETE via HTML forms.
