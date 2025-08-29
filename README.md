@@ -11,6 +11,7 @@ It supports basic CRUD operations.
 
 ### API Endpoints
 - **GET /person** → Get a list of people
+- **GET /person/:id** → Get a people by ID
 - **POST /person** → Create a new person
 - **PUT /person/:id** → Update a person by ID
 - **DELETE /person/:id** → Delete a person by ID
