@@ -24,7 +24,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // routes
 app.use('/person', personRoutes);
-
+app.get('/health', (req, res) => {
+  res.status(200).send("OK");
+});
 app.get('/', (req, res) => {
   res.redirect('/person');
 });
